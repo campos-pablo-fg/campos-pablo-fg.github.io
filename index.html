@@ -11,19 +11,19 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a href="#">Daily Life</a></li>
-				<li><a href="#">Japanese</a></li>
-				<li><a href="#">Programming</a></li>
-				<li><a href="#">Art</a></li>
-				<li><a href="#">Music</a></li>
+				<li><a id="daily_menu">Daily Life</a></li>
+				<li><a id="japanese_menu">Japanese</a></li>
+				<li><a id="programming_menu" >Programming</a></li>
+				<li><a id=art_menu>Art</a></li>
+				<li><a id=music_menu>Music</a></li>
 			</ul>
 		</nav>
 		<main>
-			<article>
-				<h1>Article title</h1>
+			<article class= "japanese">
+				<h1>Japanese Post</h1>
 				<time datetime = '2019-04-13' 11:31>Saturday , April 13th</time><br>
 				<img src="article1.jpg"><h5>Photograph by Mau Yamashita</h5></img>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p>Japanese Post</p>
 				<details>
 					<summary>Send a comment</summary>
 					<form>
@@ -33,9 +33,75 @@
 					</form>
 				</details>
 			</article>
-
-			<article>
-				<h1>Article title</h1>
+			<article class= "japanese">
+				<h1>Japanese Post</h1>
+				<time datetime = '2019-04-13' 11:31>Saturday , April 13th</time><br>
+				<img src="article1.jpg"><h5>Photograph by Mau Yamashita</h5></img>
+				<p>Japanese Post</p>
+				<details>
+					<summary>Send a comment</summary>
+					<form>
+						<textarea  required="true" name="comment" placeholder="comment here.."></textarea>
+						<br>
+						<input type="submit" value="Submit">
+					</form>
+				</details>
+			</article>
+			<article class= "japanese">
+				<h1>Japanese Post</h1>
+				<time datetime = '2019-04-13' 11:31>Saturday , April 13th</time><br>
+				<img src="article1.jpg"><h5>Photograph by Mau Yamashita</h5></img>
+				<p>Japanese Post</p>
+				<details>
+					<summary>Send a comment</summary>
+					<form>
+						<textarea  required="true" name="comment" placeholder="comment here.."></textarea>
+						<br>
+						<input type="submit" value="Submit">
+					</form>
+				</details>
+			</article>
+			<article class= "programming">
+				<h1>Programming Post</h1>
+				<time datetime = '2019-04-13' 11:31>Saturday , April 13th</time>
+				<p> Programming Post</p>
+				<details>
+					<summary>Send a comment</summary>
+					<form>
+						<textarea  required="true" type = "textarea" name="comment" placeholder="comment here.."></textarea>
+						<br>
+						<input type="submit" value="Submit">
+					</form>
+				</details>
+			</article>
+			<article class= "programming">
+				<h1>Programming Post 2</h1>
+				<time datetime = '2019-04-13' 11:31>Saturday , April 13th</time>
+				<p> Programming Post 2</p>
+				<details>
+					<summary>Send a comment</summary>
+					<form>
+						<textarea  required="true" type = "textarea" name="comment" placeholder="comment here.."></textarea>
+						<br>
+						<input type="submit" value="Submit">
+					</form>
+				</details>
+			</article>
+			<article class= "daily">
+				<h1>Daily Post</h1>
+				<time datetime = '2019-04-13' 11:31>Saturday , April 13th</time>
+				<p> Content of the post </p>
+				<details>
+					<summary>Send a comment</summary>
+					<form>
+						<textarea  required="true" type = "textarea" name="comment" placeholder="comment here.."></textarea>
+						<br>
+						<input type="submit" value="Submit">
+					</form>
+				</details>
+			</article >
+			<article class="art">
+				<h1>Art Post</h1>
 				<time datetime = '2019-04-13' 11:31>Saturday , April 13th</time>
 				<p> Content of the post </p>
 				<details>
@@ -47,8 +113,8 @@
 					</form>
 				</details>
 			</article>
-			<article>
-				<h1>Article title</h1>
+			<article class="music">
+				<h1>Music Post</h1>
 				<time datetime = '2019-04-13' 11:31>Saturday , April 13th</time>
 				<p> Content of the post </p>
 				<details>
@@ -60,20 +126,6 @@
 					</form>
 				</details>
 			</article>
-			<article>
-				<h1>Article title</h1>
-				<time datetime = '2019-04-13' 11:31>Saturday , April 13th</time>
-				<p> Content of the post </p>
-				<details>
-					<summary>Send a comment</summary>
-					<form>
-						<textarea  required="true" type = "textarea" name="comment" placeholder="comment here.."></textarea>
-						<br>
-						<input type="submit" value="Submit">
-					</form>
-				</details>
-			</article>
-			
 		</main>
 		<aside>
 				<section>
@@ -84,13 +136,12 @@
 				<section>
 					<h6>INTEREST LINKS</h6>
 					<p>Coming soon...</p>
-					
 				</section>
 			</aside>
 		
-
 		<footer>
 			<p>© 2019 - 2019 The obvious unknown thoughts. All Rights Reserved. All photos taken by Pablo Campos, unless otherwise noted. If you'd like to share, please send a note asking permission.</p>
 		</footer>
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
