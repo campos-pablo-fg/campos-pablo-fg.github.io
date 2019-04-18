@@ -10,6 +10,11 @@ let good_post_array = [];
 
 sortPost(post_values);
 
+function loadAllPosts(posts){
+	for(const post of posts){
+		main_wrap.appendChild(post);
+	}
+}
 function sortPost(array){
 
 	array.sort(function(a, b) {
@@ -23,14 +28,14 @@ function sortPost(array){
 
 function showSpecificPosts(post_type){
 	good_post_array = [];
+	loadAllPosts(post_values);
 	for (const post of post_values) {
 		if(post.className === post_type){
 			good_post_array.push(post);
 			main_wrap.removeChild(post);
-			post.hidden = false;
 		}
 		else{
-			post.hidden = true;
+			main_wrap.removeChild(post);
 		}
 	}
 	sortPost(good_post_array);
