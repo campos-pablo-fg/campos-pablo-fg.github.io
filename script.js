@@ -8,15 +8,10 @@ const post_values = Object.values(all_posts);
 const main_wrap = document.getElementById("Main");
 let good_post_array = [];
 
+
 sortPost(post_values);
 
-function loadAllPosts(posts){
-	for(const post of posts){
-		main_wrap.appendChild(post);
-	}
-}
 function sortPost(array){
-
 	array.sort(function(a, b) {
     return new Date(b.children[1].getAttribute("datetime")) - new Date(a.children[1].getAttribute("datetime"));
 	});
@@ -28,14 +23,13 @@ function sortPost(array){
 
 function showSpecificPosts(post_type){
 	good_post_array = [];
-	loadAllPosts(post_values);
 	for (const post of post_values) {
 		if(post.className === post_type){
 			good_post_array.push(post);
-			main_wrap.removeChild(post);
+			post.hidden = false;
 		}
 		else{
-			main_wrap.removeChild(post);
+			post.hidden = true;
 		}
 	}
 	sortPost(good_post_array);
