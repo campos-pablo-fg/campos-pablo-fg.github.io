@@ -73,7 +73,7 @@ aside{
 	box-shadow: 0px 5px 5px grey;
 }
 article p{
-	text-align: left;
+	text-align: justify;
 	width: 100%;
 	border: 0px solid;
 	font-size: 20px;
